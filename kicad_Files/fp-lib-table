@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name acheron_Components)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Components.pretty)(options "")(descr ""))
+  (lib (name acheron_Connectors)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Connectors.pretty)(options "")(descr ""))
+  (lib (name acheron_Graphics)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Graphics.pretty)(options "")(descr ""))
+  (lib (name acheron_Hardware)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Hardware.pretty)(options "")(descr ""))
+  (lib (name acheron_Logos)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_Logos.pretty)(options "")(descr ""))
+  (lib (name acheron_MountingHoles)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_MountingHoles.pretty)(options "")(descr ""))
+  (lib (name acheron_MX)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_MX.pretty)(options "")(descr ""))
+  (lib (name acheron_SwitchSlots)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_SwitchSlots.pretty)(options "")(descr ""))
+  (lib (name acheron_MX_SolderMask)(type KiCad)(uri ${KIPRJMOD}/AcheronLibrary/footprints/acheron_MX_SolderMask.pretty)(options "")(descr ""))
+  (lib (name hammerhead_Graphics)(type KiCad)(uri /home/alvaro/Desktop/AcheronProject/Hammerhead/Graphics/hammerhead_Graphics.pretty)(options "")(descr ""))
+)
