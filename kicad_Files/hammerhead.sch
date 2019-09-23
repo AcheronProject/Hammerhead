@@ -277,28 +277,20 @@ Wire Notes Line width 20
 	4175 20325 4175 22050
 Wire Notes Line width 20
 	5600 20300 5600 22050
-Text GLabel 23350 16975 2    50   Input ~ 0
-SWDIO
-Wire Wire Line
-	23350 16975 23300 16975
 Text GLabel 22950 16025 1    50   Input ~ 0
 SWCLK
 Wire Wire Line
 	22950 16025 22950 16075
-Text Notes 12725 14650 0    100  Italic 20
+Text Notes 12850 12150 0    100  Italic 20
 Serial programming
 Wire Wire Line
-	13400 15250 13325 15250
-Text GLabel 13400 15050 2    50   Input ~ 0
+	14025 13100 13975 13100
+Text GLabel 14025 13200 2    50   Input ~ 0
 SWDIO
-Text GLabel 13400 14950 2    50   Input ~ 0
+Text GLabel 13475 12525 1    50   Input ~ 0
 3.3V
 Wire Wire Line
-	13400 14950 13325 14950
-Text GLabel 13325 15850 2    50   Input ~ 0
-NRST
-Wire Wire Line
-	13325 15050 13400 15050
+	13475 12525 13475 12600
 $Comp
 L Transistor_BJT:DTC123J QRST1
 U 1 1 5D249555
@@ -989,13 +981,7 @@ $EndComp
 Wire Wire Line
 	9100 13950 9100 13900
 Wire Notes Line width 20
-	12525 14450 12525 15925
-Wire Notes Line width 20
-	12525 14450 14425 14450
-Wire Notes Line width 20
-	14425 14450 14425 15925
-Wire Notes Line width 20
-	12525 15925 14425 15925
+	12650 11950 14550 11950
 Wire Notes Line width 20
 	7800 14725 7800 19150
 Wire Notes Line width 20
@@ -1017,7 +1003,7 @@ Wire Notes Line
 Text Notes 8225 18525 1    50   ~ 0
 Shield
 Wire Notes Line width 20
-	12525 14750 14425 14750
+	12650 12250 14550 12250
 Wire Notes Line width 20
 	12650 16500 15200 16500
 Wire Notes Line width 20
@@ -1206,23 +1192,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 5D886A2F
-P 5250 18750
-F 0 "H5" H 5350 18796 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 18705 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 18750 50  0001 C CNN
-F 3 "~" H 5250 18750 50  0001 C CNN
-	1    5250 18750
-	1    0    0    -1  
+P 5300 18775
+F 0 "H5" V 5350 18275 50  0000 L CNN
+F 1 "Oval Mounting Hole" V 5275 18375 50  0000 R CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5300 18775 50  0001 C CNN
+F 3 "~" H 5300 18775 50  0001 C CNN
+	1    5300 18775
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5D9357B9
-P 5250 19325
-F 0 "H6" H 5350 19371 50  0000 L CNN
-F 1 "Half Side Hole " H 5350 19280 50  0000 L CNN
-F 2 "acheron_MountingHoles:halfSideHole" H 5250 19325 50  0001 C CNN
-F 3 "~" H 5250 19325 50  0001 C CNN
-	1    5250 19325
+P 5250 19050
+F 0 "H6" H 5350 19096 50  0000 L CNN
+F 1 "Half Side Hole " H 5350 19005 50  0000 L CNN
+F 2 "acheron_MountingHoles:halfSideHole" H 5250 19050 50  0001 C CNN
+F 3 "~" H 5250 19050 50  0001 C CNN
+	1    5250 19050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1729,12 +1715,12 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 5E63D297
-P 5250 19575
-F 0 "H7" H 5350 19621 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 19530 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 19575 50  0001 C CNN
-F 3 "~" H 5250 19575 50  0001 C CNN
-	1    5250 19575
+P 5250 19300
+F 0 "H7" H 5350 19346 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 5350 19255 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 19300 50  0001 C CNN
+F 3 "~" H 5250 19300 50  0001 C CNN
+	1    5250 19300
 	1    0    0    -1  
 $EndComp
 Text GLabel 5075 5500 0    50   Input ~ 0
@@ -1929,107 +1915,94 @@ Row4
 Connection ~ 7925 4525
 Wire Wire Line
 	7925 4525 8925 4525
-Wire Wire Line
-	13325 15350 13400 15350
-$Comp
-L Connector:Conn_01x10_Male J5
-U 1 1 5CF6EE3E
-P 13125 15350
-F 0 "J5" V 12900 15350 50  0000 C CNN
-F 1 "Conn_01x06_Male" V 13000 15400 50  0000 C CNN
-F 2 "acheron_Connectors:HEADER_6PIN_HORIZONTAL" H 13125 15350 50  0001 C CNN
-F 3 "~" H 13125 15350 50  0001 C CNN
-	1    13125 15350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5CFDFC6D
-P 13400 15350
-F 0 "#PWR0103" H 13400 15100 50  0001 C CNN
-F 1 "GND" V 13405 15222 50  0000 R CNN
-F 2 "" H 13400 15350 50  0001 C CNN
-F 3 "" H 13400 15350 50  0001 C CNN
-	1    13400 15350
-	0    -1   1    0   
+P 13475 13850
+F 0 "#PWR0103" H 13475 13600 50  0001 C CNN
+F 1 "GND" H 13475 13725 30  0000 C CNN
+F 2 "" H 13475 13850 50  0001 C CNN
+F 3 "" H 13475 13850 50  0001 C CNN
+	1    13475 13850
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small RD1
 U 1 1 5D45B6A0
-P 16300 15300
-F 0 "RD1" H 16359 15331 31  0000 L CNN
-F 1 "1M" H 16359 15269 31  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 16300 15300 50  0001 C CNN
-F 3 "~" H 16300 15300 50  0001 C CNN
-	1    16300 15300
+P 13700 15150
+F 0 "RD1" H 13759 15181 31  0000 L CNN
+F 1 "1M" H 13759 15119 31  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13700 15150 50  0001 C CNN
+F 3 "~" H 13700 15150 50  0001 C CNN
+	1    13700 15150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small CD1
 U 1 1 5D45B6A6
-P 16175 15300
-F 0 "CD1" V 16325 15300 31  0000 C CNN
-F 1 "4.7nF" V 16275 15300 31  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 16175 15300 50  0001 C CNN
-F 3 "~" H 16175 15300 50  0001 C CNN
-	1    16175 15300
+P 13575 15150
+F 0 "CD1" V 13725 15150 31  0000 C CNN
+F 1 "4.7nF" V 13675 15150 31  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13575 15150 50  0001 C CNN
+F 3 "~" H 13575 15150 50  0001 C CNN
+	1    13575 15150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	16300 15150 16300 15200
+	13700 15000 13700 15050
 Wire Wire Line
-	16175 15400 16175 15450
+	13575 15250 13575 15300
 Wire Wire Line
-	16175 15450 16300 15450
+	13575 15300 13700 15300
 Wire Wire Line
-	16300 15450 16300 15400
+	13700 15300 13700 15250
 Wire Wire Line
-	16300 15450 16300 15500
-Connection ~ 16300 15450
+	13700 15300 13700 15350
+Connection ~ 13700 15300
 $Comp
 L power:GND #PWR0111
 U 1 1 5D45B6B6
-P 16300 15500
-F 0 "#PWR0111" H 16300 15250 50  0001 C CNN
-F 1 "GND" H 16300 15375 31  0000 C CNN
-F 2 "" H 16300 15500 50  0001 C CNN
-F 3 "" H 16300 15500 50  0001 C CNN
-	1    16300 15500
+P 13700 15350
+F 0 "#PWR0111" H 13700 15100 50  0001 C CNN
+F 1 "GND" H 13700 15225 31  0000 C CNN
+F 2 "" H 13700 15350 50  0001 C CNN
+F 3 "" H 13700 15350 50  0001 C CNN
+	1    13700 15350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D DD1
 U 1 1 5D48318C
-P 15825 15150
-F 0 "DD1" V 15794 15229 31  0000 L CNN
-F 1 "1N4007" V 15856 15229 31  0000 L CNN
-F 2 "acheron_Components:D_SOD-123" H 15825 15150 50  0001 C CNN
-F 3 "~" H 15825 15150 50  0001 C CNN
-	1    15825 15150
+P 13225 15000
+F 0 "DD1" V 13194 15079 31  0000 L CNN
+F 1 "1N4007" V 13256 15079 31  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 13225 15000 50  0001 C CNN
+F 3 "~" H 13225 15000 50  0001 C CNN
+	1    13225 15000
 	-1   0    0    1   
 $EndComp
-Text GLabel 15675 15150 0    50   Input ~ 0
+Text GLabel 13075 15000 0    50   Input ~ 0
 CASE
 Wire Notes Line width 20
-	15250 14500 16750 14500
+	12650 14350 14150 14350
 Wire Notes Line width 20
-	16750 14500 16750 16000
+	14150 14350 14150 15850
 Wire Notes Line width 20
-	16750 16000 15250 16000
+	14150 15850 12650 15850
 Wire Notes Line width 20
-	15250 14750 16750 14750
+	12650 14600 14150 14600
 Wire Notes Line width 20
-	15250 14500 15250 16000
-Text Notes 15600 14700 0    100  Italic 20
+	12650 14350 12650 15850
+Text Notes 13000 14550 0    100  Italic 20
 Case ESD
 Wire Wire Line
-	15975 15150 16175 15150
+	13375 15000 13575 15000
 Wire Wire Line
-	16175 15200 16175 15150
-Connection ~ 16175 15150
+	13575 15050 13575 15000
+Connection ~ 13575 15000
 Wire Wire Line
-	16175 15150 16300 15150
-Text GLabel 5250 18850 3    50   Input ~ 0
+	13575 15000 13700 15000
+Text GLabel 5400 18775 2    50   Input ~ 0
 CASE
 $Comp
 L Device:R_Small RCC2
@@ -2190,8 +2163,6 @@ Wire Wire Line
 Connection ~ 7425 5175
 Wire Wire Line
 	7425 5175 7425 4200
-Wire Wire Line
-	8425 6150 8425 5175
 Connection ~ 8425 5175
 Connection ~ 6425 6150
 Connection ~ 6925 6475
@@ -2236,8 +2207,6 @@ Wire Wire Line
 Connection ~ 14925 6475
 Wire Wire Line
 	15925 6475 14925 6475
-Wire Wire Line
-	10925 6475 13925 6475
 $Comp
 L acheronSymbols:MXSwitch SW39
 U 1 1 5E6709F2
@@ -2296,8 +2265,6 @@ Wire Wire Line
 	5925 6475 6925 6475
 Wire Wire Line
 	5075 6475 5925 6475
-Wire Wire Line
-	7925 6475 10925 6475
 Wire Wire Line
 	5425 6150 5425 7125
 Wire Wire Line
@@ -2385,105 +2352,421 @@ Wire Wire Line
 Wire Wire Line
 	15425 7125 15575 7125
 Connection ~ 15425 6150
-Text GLabel 19775 19175 0    50   Input ~ 0
+Text GLabel 20700 19600 3    50   Input ~ 0
 Col2
-Text GLabel 19775 18925 0    50   Input ~ 0
+Text GLabel 20450 19600 3    50   Input ~ 0
 Col3
-Text GLabel 19775 17675 0    50   Input ~ 0
-Col5
-Text GLabel 19775 17425 0    50   Input ~ 0
-Col6
-Text GLabel 19775 17175 0    50   Input ~ 0
+Text GLabel 19775 18675 0    50   Input ~ 0
 Col7
-Text GLabel 19775 16925 0    50   Input ~ 0
+Text GLabel 19775 17675 0    50   Input ~ 0
 Col8
-Text GLabel 19775 16675 0    50   Input ~ 0
+Text GLabel 19775 17425 0    50   Input ~ 0
 Col9
-Text GLabel 20700 16000 1    50   Input ~ 0
+Text GLabel 19775 17175 0    50   Input ~ 0
 Col10
-Text GLabel 20950 16000 1    50   Input ~ 0
+Text GLabel 19775 16925 0    50   Input ~ 0
 Col11
 Wire Wire Line
-	20700 16000 20700 16075
-Wire Wire Line
-	20950 16000 20950 16075
-Wire Wire Line
-	19775 16675 19850 16675
+	19775 17175 19850 17175
 Wire Wire Line
 	19775 16925 19850 16925
-Wire Wire Line
-	19775 17175 19850 17175
 Wire Wire Line
 	19775 17425 19850 17425
 Wire Wire Line
 	19775 17675 19850 17675
 Wire Wire Line
-	19775 18925 19850 18925
+	19775 18675 19850 18675
+Wire Wire Line
+	20450 19600 20450 19525
+Wire Wire Line
+	20700 19600 20700 19525
+Text GLabel 19775 19175 0    50   Input ~ 0
+Col5
 Wire Wire Line
 	19775 19175 19850 19175
-Text GLabel 19775 18675 0    50   Input ~ 0
-Col4
-Wire Wire Line
-	19775 18675 19850 18675
-Text GLabel 21450 16000 1    50   Input ~ 0
+Text GLabel 21700 16000 1    50   Input ~ 0
 Col1
 Wire Wire Line
-	21450 16000 21450 16075
+	21700 16000 21700 16075
 Text GLabel 21200 16000 1    50   Output ~ 0
 BOOT0
 Wire Wire Line
 	21200 16000 21200 16075
 Text GLabel 20200 19600 3    50   Input ~ 0
-Row4
+Col4
 Wire Wire Line
 	20200 19600 20200 19525
-Text GLabel 21700 16000 1    50   Input ~ 0
-Row2
-Wire Wire Line
-	21700 16000 21700 16075
-Text GLabel 23375 17975 2    50   Input ~ 0
+Text GLabel 21450 16000 1    50   Input ~ 0
 Row1
 Wire Wire Line
-	23375 17975 23300 17975
-NoConn ~ 13325 15550
+	21450 16000 21450 16075
+Text GLabel 14025 13100 2    50   Input ~ 0
+SWCLK
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J2
+U 1 1 5D896FF6
+P 13475 13200
+F 0 "J2" V 12875 13200 50  0000 C CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 12975 13200 50  0000 C CNN
+F 2 "acheron_Connectors:Conn_ARM_JTAG_SWD_10" H 13475 13200 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 13125 11950 50  0001 C CNN
+	1    13475 13200
+	1    0    0    -1  
+$EndComp
+Text GLabel 14025 12900 2    50   Input ~ 0
+NRST
 Wire Wire Line
-	13325 15750 13400 15750
+	14025 12900 13975 12900
+Wire Wire Line
+	14025 13200 13975 13200
+Wire Wire Line
+	13475 13850 13475 13800
 $Comp
 L power:GND #PWR0112
-U 1 1 5DEB0AA2
-P 13400 15750
-F 0 "#PWR0112" H 13400 15500 50  0001 C CNN
-F 1 "GND" V 13405 15622 50  0000 R CNN
-F 2 "" H 13400 15750 50  0001 C CNN
-F 3 "" H 13400 15750 50  0001 C CNN
-	1    13400 15750
-	0    -1   1    0   
+U 1 1 5D9BCEF9
+P 13375 13850
+F 0 "#PWR0112" H 13375 13600 50  0001 C CNN
+F 1 "GND" H 13375 13725 30  0000 C CNN
+F 2 "" H 13375 13850 50  0001 C CNN
+F 3 "" H 13375 13850 50  0001 C CNN
+	1    13375 13850
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13325 15150 13400 15150
+	13375 13850 13375 13800
+NoConn ~ 13975 13300
+NoConn ~ 13975 13400
+Wire Wire Line
+	7425 7125 7425 8100
+Wire Wire Line
+	7575 8100 7425 8100
 $Comp
-L power:GND #PWR0116
-U 1 1 5DEF0412
-P 13400 15150
-F 0 "#PWR0116" H 13400 14900 50  0001 C CNN
-F 1 "GND" V 13405 15022 50  0000 R CNN
-F 2 "" H 13400 15150 50  0001 C CNN
-F 3 "" H 13400 15150 50  0001 C CNN
-	1    13400 15150
-	0    -1   1    0   
+L acheronSymbols:MXSwitch SW42
+U 1 1 5DA97E02
+P 7925 8100
+F 0 "SW42" H 7925 8150 50  0000 C CNN
+F 1 "LALT_125" H 7925 8025 50  0000 C CIN
+F 2 "acheron_MX_SolderMask:MX125" H 7925 8100 50  0001 C CNN
+F 3 "" H 7925 8100 50  0001 C CNN
+	1    7925 8100
+	1    0    0    -1  
 $EndComp
-Text GLabel 13400 15250 2    50   Input ~ 0
-SWCLK
-Text GLabel 23350 17725 2    50   Input ~ 0
-SWO
 Wire Wire Line
-	23350 17725 23300 17725
-Text GLabel 13375 15450 2    50   Input ~ 0
-SWO
+	7925 6775 8325 6775
 Wire Wire Line
-	13375 15450 13325 15450
-Text GLabel 13375 15650 2    50   Input ~ 0
-BOOT0
+	8325 6775 8325 7575
 Wire Wire Line
-	13375 15650 13325 15650
+	8325 7575 7925 7575
+Wire Wire Line
+	7925 7575 7925 7750
+Connection ~ 7925 6775
+$Comp
+L Device:D D43
+U 1 1 5DAC5D7D
+P 8925 7600
+F 0 "D43" V 8894 7679 31  0000 L CNN
+F 1 "1N4148" V 8956 7679 31  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8925 7600 50  0001 C CNN
+F 3 "~" H 8925 7600 50  0001 C CNN
+	1    8925 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW43
+U 1 1 5DAC5D83
+P 10925 8100
+F 0 "SW43" H 10925 8150 50  0000 C CNN
+F 1 "SPC_225" H 10925 8025 50  0000 C CIN
+F 2 "acheron_MX_SolderMask:MX225R" H 10925 8100 50  0001 C CNN
+F 3 "" H 10925 8100 50  0001 C CNN
+	1    10925 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 8100 8425 8100
+Wire Wire Line
+	8925 7450 8925 6475
+Connection ~ 8925 6475
+Wire Wire Line
+	8925 6475 10925 6475
+Wire Wire Line
+	10425 7125 10425 8100
+Wire Wire Line
+	10575 8100 10425 8100
+$Comp
+L acheronSymbols:MXSwitch SW44
+U 1 1 5DB6DFD1
+P 8925 8100
+F 0 "SW44" H 8925 8150 50  0000 C CNN
+F 1 "SPC_275" H 8925 8025 50  0000 C CIN
+F 2 "acheron_MX_SolderMask:MX275R" H 8925 8100 50  0001 C CNN
+F 3 "" H 8925 8100 50  0001 C CNN
+	1    8925 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10925 6775 11275 6775
+Wire Wire Line
+	10925 7550 10925 7750
+Connection ~ 10925 6775
+Wire Wire Line
+	8425 5175 8425 6150
+Wire Wire Line
+	7925 6475 8925 6475
+Wire Wire Line
+	8425 8100 8425 6150
+Connection ~ 8425 6150
+Wire Wire Line
+	11275 6775 11275 7550
+Wire Wire Line
+	10925 7550 11275 7550
+$Comp
+L Device:D D45
+U 1 1 5DCDF250
+P 12925 7600
+F 0 "D45" V 12894 7679 31  0000 L CNN
+F 1 "1N4148" V 12956 7679 31  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 12925 7600 50  0001 C CNN
+F 3 "~" H 12925 7600 50  0001 C CNN
+	1    12925 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW45
+U 1 1 5DCDF256
+P 12925 8100
+F 0 "SW45" H 12925 8150 50  0000 C CNN
+F 1 "RALT_125" H 12925 8025 50  0000 C CIN
+F 2 "acheron_MX_SolderMask:MX125" H 12925 8100 50  0001 C CNN
+F 3 "" H 12925 8100 50  0001 C CNN
+	1    12925 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12575 8100 12425 8100
+Wire Wire Line
+	12925 7450 12925 6475
+Wire Wire Line
+	12425 8100 12425 6150
+Wire Wire Line
+	13425 7125 13425 8100
+Wire Wire Line
+	13575 8100 13425 8100
+$Comp
+L acheronSymbols:MXSwitch SW46
+U 1 1 5DCF88E3
+P 13925 8100
+F 0 "SW46" H 13925 8150 50  0000 C CNN
+F 1 "SUPER_100" H 13925 8025 50  0000 C CIN
+F 2 "acheron_MX_SolderMask:MX100" H 13925 8100 50  0001 C CNN
+F 3 "" H 13925 8100 50  0001 C CNN
+	1    13925 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13925 7550 13925 7750
+Wire Wire Line
+	14275 6775 14275 7550
+Wire Wire Line
+	13925 7550 14275 7550
+Wire Wire Line
+	14275 6775 13925 6775
+Connection ~ 13925 6775
+Wire Wire Line
+	10925 6475 12925 6475
+Connection ~ 12925 6475
+Wire Wire Line
+	12925 6475 13925 6475
+Wire Wire Line
+	19775 18925 19850 18925
+Text GLabel 19775 18925 0    50   Input ~ 0
+Col6
+Text GLabel 19775 16675 0    50   Input ~ 0
+Row3
+Wire Wire Line
+	19775 16675 19850 16675
+Text GLabel 20700 16000 1    50   Input ~ 0
+Row4
+Wire Wire Line
+	20700 16000 20700 16075
+Text GLabel 20950 16000 1    50   Input ~ 0
+Row2
+Wire Wire Line
+	20950 16000 20950 16075
+Text GLabel 23350 16975 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	23350 16975 23300 16975
+Wire Notes Line width 20
+	12650 14075 14550 14075
+Wire Notes Line width 20
+	12650 11950 12650 14075
+Wire Notes Line width 20
+	14550 11950 14550 14075
+Text GLabel 21950 16000 1    50   Output ~ 0
+Extra1
+Wire Wire Line
+	21950 16000 21950 16075
+Text GLabel 22200 16000 1    50   Output ~ 0
+Extra2
+Wire Wire Line
+	22200 16000 22200 16075
+Text GLabel 22450 16000 1    50   Output ~ 0
+Extra3
+Wire Wire Line
+	22450 16000 22450 16075
+Text GLabel 22700 16000 1    50   Output ~ 0
+Extra4
+Wire Wire Line
+	22700 16000 22700 16075
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5E2D710A
+P 21225 12850
+F 0 "J3" H 21305 12842 50  0000 L CNN
+F 1 "Conn_01x08" H 21305 12751 50  0000 L CNN
+F 2 "acheron_Connectors:PinHeader_1x8_P2.54mm_Vertical" H 21225 12850 50  0001 C CNN
+F 3 "~" H 21225 12850 50  0001 C CNN
+	1    21225 12850
+	1    0    0    -1  
+$EndComp
+Text GLabel 20950 12550 0    50   Output ~ 0
+Extra1
+Wire Wire Line
+	20950 12550 21025 12550
+Text GLabel 20950 12650 0    50   Output ~ 0
+Extra2
+Wire Wire Line
+	20950 12650 21025 12650
+Text GLabel 20950 12750 0    50   Output ~ 0
+Extra3
+Wire Wire Line
+	20950 12750 21025 12750
+Text GLabel 20950 12850 0    50   Output ~ 0
+Extra4
+Wire Wire Line
+	20950 12850 21025 12850
+Text GLabel 20950 12950 0    50   Output ~ 0
+Extra5
+Wire Wire Line
+	20950 12950 21025 12950
+Text GLabel 20950 13050 0    50   Output ~ 0
+Extra6
+Wire Wire Line
+	20950 13050 21025 13050
+Text GLabel 20950 13150 0    50   Output ~ 0
+Extra7
+Wire Wire Line
+	20950 13150 21025 13150
+Text GLabel 20950 13250 0    50   Output ~ 0
+Extra8
+Wire Wire Line
+	20950 13250 21025 13250
+Text GLabel 23375 17725 2    50   Output ~ 0
+Extra5
+Wire Wire Line
+	23375 17725 23300 17725
+Text GLabel 23375 17975 2    50   Output ~ 0
+Extra6
+Wire Wire Line
+	23375 17975 23300 17975
+Text GLabel 23375 18225 2    50   Output ~ 0
+Extra7
+Wire Wire Line
+	23375 18225 23300 18225
+Text GLabel 23375 18475 2    50   Output ~ 0
+Extra8
+Wire Wire Line
+	23375 18475 23300 18475
+$Comp
+L Connector_Generic:Conn_01x10 J4
+U 1 1 5E45DEA6
+P 21200 13900
+F 0 "J4" H 21280 13892 50  0000 L CNN
+F 1 "Conn_01x08" H 21280 13801 50  0000 L CNN
+F 2 "acheron_Connectors:PinHeader_1x10_P2.54mm_Vertical" H 21200 13900 50  0001 C CNN
+F 3 "~" H 21200 13900 50  0001 C CNN
+	1    21200 13900
+	1    0    0    -1  
+$EndComp
+Text GLabel 20925 13700 0    50   Output ~ 0
+Extra11
+Wire Wire Line
+	20925 13700 21000 13700
+Text GLabel 20925 13800 0    50   Output ~ 0
+Extra12
+Wire Wire Line
+	20925 13800 21000 13800
+Text GLabel 20925 13900 0    50   Output ~ 0
+Extra13
+Wire Wire Line
+	20925 13900 21000 13900
+Text GLabel 20925 14000 0    50   Output ~ 0
+Extra14
+Wire Wire Line
+	20925 14000 21000 14000
+Text GLabel 20925 14100 0    50   Output ~ 0
+Extra15
+Wire Wire Line
+	20925 14100 21000 14100
+Text GLabel 20925 14200 0    50   Output ~ 0
+Extra16
+Wire Wire Line
+	20925 14200 21000 14200
+Text GLabel 20925 14300 0    50   Output ~ 0
+Extra17
+Wire Wire Line
+	20925 14300 21000 14300
+Text GLabel 20925 14400 0    50   Output ~ 0
+Extra18
+Wire Wire Line
+	20925 14400 21000 14400
+Text GLabel 20925 13500 0    50   Output ~ 0
+Extra9
+Wire Wire Line
+	20925 13500 21000 13500
+Text GLabel 20925 13600 0    50   Output ~ 0
+Extra10
+Wire Wire Line
+	20925 13600 21000 13600
+Text GLabel 23375 19225 2    50   Output ~ 0
+Extra11
+Wire Wire Line
+	23375 19225 23300 19225
+Text GLabel 22450 19600 3    50   Output ~ 0
+Extra12
+Wire Wire Line
+	22450 19600 22450 19525
+Text GLabel 22200 19600 3    50   Output ~ 0
+Extra13
+Wire Wire Line
+	22200 19600 22200 19525
+Text GLabel 21950 19600 3    50   Output ~ 0
+Extra14
+Wire Wire Line
+	21950 19600 21950 19525
+Text GLabel 21700 19600 3    50   Output ~ 0
+Extra15
+Wire Wire Line
+	21700 19600 21700 19525
+Text GLabel 21450 19600 3    50   Output ~ 0
+Extra16
+Wire Wire Line
+	21450 19600 21450 19525
+Text GLabel 21200 19600 3    50   Output ~ 0
+Extra17
+Wire Wire Line
+	21200 19600 21200 19525
+Text GLabel 20950 19600 3    50   Output ~ 0
+Extra18
+Wire Wire Line
+	20950 19600 20950 19525
+Text GLabel 23375 18725 2    50   Output ~ 0
+Extra9
+Wire Wire Line
+	23375 18725 23300 18725
+Text GLabel 23375 18975 2    50   Output ~ 0
+Extra10
+Wire Wire Line
+	23375 18975 23300 18975
 $EndSCHEMATC
