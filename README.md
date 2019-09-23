@@ -14,7 +14,7 @@ This PCB was born as a replacement PCB for an AMJ40 keyboard I have. I bought it
 
 Click [this link](http://www.keyboard-layout-editor.com/#/gists/89c3a984e836b351fcaf27332abd0f3e) for the KLE file for the Hammerhead.
 
-![Hammherhead layouts](https://github.com/Gondolindrim/Hammerhead/raw/master/Graphics/KLE/hammherheadKLE.png)
+![Hammherhead layouts](https://github.com/Gondolindrim/Hammerhead/raw/master/Graphics/KLE/hammerheadKLE.png)
 
 ## Renders
 
